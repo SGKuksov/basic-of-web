@@ -1,0 +1,75 @@
+Arguments: 
+  D:\Program Files\nodejs\node.exe D:\Program Files\Yarn\bin\yarn.js publish
+
+PATH: 
+  C:\Users\Sergey\bin;D:\Program Files\Git\mingw32\bin;D:\Program Files\Git\usr\local\bin;D:\Program Files\Git\usr\bin;D:\Program Files\Git\usr\bin;D:\Program Files\Git\mingw32\bin;D:\Program Files\Git\usr\bin;C:\Users\Sergey\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\GnuWin32\bin;D:\OSPanel\modules\php\PHP-7.1;C:\ProgramData\ComposerSetup\bin;D:\Program Files\Git\cmd;D:\Program Files\Microsoft VS Code\bin;D:\Program Files\nodejs;D:\Program Files\Yarn\bin;C:\Program Files\Windows Kits\8.1\Windows Performance Toolkit;D:\Program Files\Sublime Text 3;C:\Users\Sergey\AppData\Roaming\Composer\vendor\bin;C:\Users\Sergey\AppData\Roaming\npm;C:\Users\Sergey\AppData\Local\Yarn\bin;C:\Users\Sergey\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;D:\Program Files\Git\usr\bin\vendor_perl;D:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  10.7.0
+
+Platform: 
+  win32 ia32
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (D:\Program Files\Yarn\lib\cli.js:131036:13)
+      at Interface.emit (events.js:182:13)
+      at Interface._ttyWrite (readline.js:783:16)
+      at ReadStream.onkeypress (readline.js:168:10)
+      at ReadStream.emit (events.js:182:13)
+      at emitKeys (internal/readline.js:422:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1022:36)
+      at ReadStream.emit (events.js:182:13)
+      at addChunk (_stream_readable.js:283:12)
+
+npm manifest: 
+  {
+    "name": "presentation",
+    "version": "1.0.0",
+    "description": "Презентация для внутреннего митапа",
+    "main": "index.js",
+    "scripts": {
+      "pdf": "shower pdf",
+      "start": "gulp serve",
+      "prepare": "gulp prepare",
+      "archive": "gulp archive",
+      "publish": "gulp publish",
+      "test": "npm run prepare && ls prepared && npm run archive && path-exists archive.zip"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/SGKuksov/presentation.git"
+    },
+    "author": "Sergei Kuksov",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/SGKuksov/presentation/issues"
+    },
+    "homepage": "https://github.com/SGKuksov/presentation#readme",
+    "dependencies": {
+      "shower-core": "^2.1.0",
+      "shower-ribbon": "^3.1.2"
+    },
+    "devDependencies": {
+      "browser-sync": "^2.24.5",
+      "del": "^3.0.0",
+      "gh-pages": "^1.2.0",
+      "gulp": "^4.0.0",
+      "gulp-rename": "^1.2.2",
+      "gulp-replace": "^1.0.0",
+      "gulp-zip": "^4.0.0",
+      "merge-stream": "^1.0.0",
+      "path-exists-cli": "^1.0.0",
+      "shower-cli": "^0.2.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
